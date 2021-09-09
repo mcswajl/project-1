@@ -24,7 +24,7 @@ fetch(apiUrl)
 
 // Cats API call
 var getCatFacts = function (user) {
-    var apiUrl = 'catfact.ninja/breeds' + user + '/repos';
+    var apiUrl = 'https://catfact.ninja/breeds' + user + '/repos';
 
 // make a get request to url
 fetch(apiUrl)
@@ -43,3 +43,6 @@ fetch(apiUrl)
 .catch(function(error) {
   alert('Unable to connect to GitHub');
 });
+
+var saveTasks = function() {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
