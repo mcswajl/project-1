@@ -1,13 +1,45 @@
-fetch(https://api.adoptapet.com/search/pets_at_shelter?key=A34F48&v=1&output=xml&shelter_id=2342)
+var getDogFacts = function (user) {
+var apiUrl = 'https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all' + user + '/repos';
 
-
-fetch(https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all)
-    .then(response => {
+// make a get request to url
+fetch(apiUrl)
+.then(function(response) {
+  // request was successful
+  if (response.ok) {
     console.log(response);
-    return response.blob();
-    })
-    .then(response => {
-    Console.log(response);
+    response.json().then(function(data) {
+      //console.log(data);
+      displayRepos(data, user);
     });
-            
-              
+  } else {
+    alert('Error: GitHub User Not Found');
+  }
+})
+.catch(function(error) {
+  alert('Unable to connect to GitHub');
+});
+
+
+fetch(catfact.ninja/breeds)
+
+
+var getCatFacts = function (user) {
+    var apiUrl = 'catfact.ninja/breeds' + user + '/repos';
+
+// make a get request to url
+fetch(apiUrl)
+.then(function(response) {
+  // request was successful
+  if (response.ok) {
+    console.log(response);
+    response.json().then(function(data) {
+      //console.log(data);
+      displayRepos(data, user);
+    });
+  } else {
+    alert('Error: GitHub User Not Found');
+  }
+})
+.catch(function(error) {
+  alert('Unable to connect to GitHub');
+});
