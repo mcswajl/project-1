@@ -32,28 +32,29 @@
 </head>
 <body>
   <header>
-    <button class=“button-primary”>button element</button>
-
+    
     <h1>Adopt<span class="cats"> From</span> Us</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#facts about cats" 
-                    title="Facts About Cats">
-                    Facts About Cats</a>
-                </li>
-                <li>
-                    <a href="#facts about dogs" 
-                    title="Facts About Dogs">
-                    Facts About Cats</a>
-                </li>
-                <!--<li>
-                    <a href="#social-media-marketing" 
-                    title="Social Media Marketing">
-                    Search Social Media Marketing</a>
-                </li> -->
-            </ul>
-        </nav>
+
+    <nav>
+      <ul>
+          <li>
+              <a href="#facts about cats" 
+              title="Facts About Cats">
+              Facts About Cats</a>
+          </li>
+          <li>
+              <a href="#facts about dogs" 
+              title="Facts About Dogs">
+              Facts About Cats</a>
+          </li>
+          <!--<li>
+              <a href="#social-media-marketing" 
+              title="Social Media Marketing">
+              Search Social Media Marketing</a>
+          </li> -->
+      </ul>
+  </nav>
+        
     </header>
 
     <section class="cats" 
@@ -63,15 +64,51 @@
         added alt and arranged code vertical to read easier-->
 
 <main class="content">
+  <section id="facts about cats" class="search">
+    <img
+        src="./assets/images/cat.jpg" class="float-left" 
+        alt="Search engine Optimization, image of notebook, pins, laptop, coffee cup ">
+        <h2>Facts About Cats</h2>
+        <p>
+          <button class=“button-primary”>button element</button>  
+          <img src="" id="catanddog">
+          
+        </p>
+          <script>
+            fetch(https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all).then(response => {
+              console.log(response);
+              return response.blob();
+            })
+            .then(response => {
+              Console.log(response);
+            });
+          
+            </script>
 
-<section id="facts about cats" class="search">
-        <img 
-            src="./assets/images/catanddog.jpg" class="float-left" 
-            alt="Search engine Optimization, image of notebook, pins, laptop, coffee cup ">
-            <h2>Facts About Cats</h2>
-            <p>
-                cat facts
-            </p>
+</section>
+
+
+  
+  <section id="facts about cats" class="search">
+    <img
+        src="./assets/images/dog.jpg" class="float-left" 
+        alt="Search engine Optimization, image of notebook, pins, laptop, coffee cup ">
+        <h2>Facts About Dogs</h2>
+        <p>
+          <button class=“button-primary”>button element</button>  
+          <img src="" id="catanddog">
+          
+        </p>
+          <script>
+            fetch(https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all).then(response => {
+              console.log(response);
+              return response.blob();
+            })
+            .then(response => {
+              Console.log(response);
+            });
+          
+            </script>
 
 </section>
 
