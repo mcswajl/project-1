@@ -82,7 +82,7 @@ p {
     padding: 25px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color:  #2a607c;
     color: #ffffff;
 }
 
@@ -98,6 +98,12 @@ section h2 {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+}
+
+form {
+    width: 75%;
+    display:inline-block;
+    margin-left: 20%;
 }
 /* apply styles to the aside elements */
 aside {
