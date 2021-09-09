@@ -47,8 +47,8 @@
               title="Facts About Dogs">
               Facts About Dogs</a>
           </li>
-          <!--<li>
-              <a href="#social-media-marketing" 
+          <!-- <li> 
+              <a href="#adoption stories" 
               title="Social Media Marketing">
               Search Social Media Marketing</a>
           </li> -->
@@ -60,14 +60,13 @@
     <section class="cats" 
          alt="Image of co-workers meeting">
 </section>
-    <!--repalced div with sections, 
-        added alt and arranged code vertical to read easier-->
+  
 
-  <!-- Primary Page Layout
+  <!-- Area of the page above the sections 
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
+      <div class="one-half column" style="margin-top: 0%">
         <h4>Adoption Methods</h4>
         <p>This is where we need to fetch an API on adopting animals. For help use this link <a href="http://www.getskeleton.com"></a>.</p>
       </div>
@@ -75,6 +74,8 @@
   </div>
 
   <main class="content">
+
+    <!-- This section is linked from the nav bar  -->
     <section id="facts about cats" class="search">
       <img
           src="./assets/images/cat.jpg" class="float-left" 
@@ -89,21 +90,10 @@
         </img>
             
           </p>
-            <script>
-              fetch(https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all).then(response => {
-                console.log(response);
-                return response.blob();
-              })
-              .then(response => {
-                Console.log(response);
-              });
-            
-              </script>
-  
+              
   </section>
   
-  
-    
+     <!-- This section is linked from the nav bar  -->
     <section id="facts about dogs" class="search">
       <img
           src="./assets/images/dog.jpg" class="float-left" 
@@ -129,7 +119,7 @@
   
   </section>
 
-  <aside>
+  <!-- <aside>
     <h3>Cat Adoption Story</h3>
     <img id="Symbol of Lead Generation" 
     src="./assets/images/cat.jpg" 
@@ -146,7 +136,7 @@
         Add text here for the success story
        </p>
    
-</aside>
+</aside> -->
   <footer class="footer">
     <h2>Project Team - Christian, Angelo, an Josh</h2>
     <p>
