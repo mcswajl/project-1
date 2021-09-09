@@ -52,6 +52,9 @@ a {
 p {
     font-size: 16px;
 }
+.button-primary {
+    background-color: #d9dcd6;
+}
 
 /* apply styles to .hero image */
 .hero {
@@ -75,8 +78,8 @@ p {
 
 /* apply styles to each section element */
 .search {
-    margin-bottom: 20px;
-    padding: 50px;
+    margin-bottom: 10px;
+    padding: 25px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
