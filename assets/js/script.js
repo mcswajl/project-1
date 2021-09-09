@@ -1,3 +1,5 @@
+
+// Dogs API call
 var getDogFacts = function (user) {
 var apiUrl = 'https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all' + user + '/repos';
 
@@ -20,9 +22,7 @@ fetch(apiUrl)
 });
 
 
-fetch(catfact.ninja/breeds)
-
-
+// Cats API call
 var getCatFacts = function (user) {
     var apiUrl = 'catfact.ninja/breeds' + user + '/repos';
 
