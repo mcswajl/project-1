@@ -1,6 +1,6 @@
 const messageInput = document.getElementById("exampleMessage")
 const emailInput = document.getElementById("exampleEmailInput")
-const reason = document.getElementById("exampleRecipientInput")
+const reasonInput = document.getElementById("exampleRecipientInput")
 const submit = document.getElementById("submit")
 
 submit.addEventListener('click', function(event) {
@@ -8,13 +8,14 @@ submit.addEventListener('click', function(event) {
   
   const msg = messageInput.value;
   const email = emailInput.value;
-  
+  const reason = reasonInput.value;
 
 console.log(msg)
 console.log(email)
 
 localStorage.setItem("msg", msg);
 localStorage.setItem("email", email);
+localStorage.setItem("reason", reason);
 
 })
 
