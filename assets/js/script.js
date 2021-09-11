@@ -45,7 +45,7 @@ fetch(apiUrl)
   alert('Unable to connect to GitHub');
 });
 
-
+}
 // Cats API call
 var getCatFacts = function (user) {
     var apiUrl = 'https://catfact.ninja/breeds' + user + '/repos';
@@ -68,3 +68,4 @@ fetch(apiUrl)
   alert('Unable to connect to GitHub');
 });
 
+}
