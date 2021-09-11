@@ -42,6 +42,15 @@ header nav ul li {
     margin-left: 25px;
 }
 
+
+
+.formsearch {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* width: 100%;*/
+
+}
 /* apply styles to the a href= */
 a {
     color: #ffffff;
@@ -103,6 +112,10 @@ form {
     width: 75%;
     display:inline-block;
     margin-left: 10%;
+    
+}
+label {
+    align-self: center;
 }
 /* apply styles to the aside elements */
 /* aside { 
