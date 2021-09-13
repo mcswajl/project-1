@@ -18,6 +18,10 @@ localStorage.setItem("msg", msg);
 localStorage.setItem("email", email);
 localStorage.setItem("reason", reason);
 
+//clear content
+messageInput.value = "" 
+emailInput.value = ""
+
 })
 
 
@@ -27,7 +31,7 @@ const dogButton = document.getElementById("dogButton")
 
 // Dogs API call
 getDogFacts = function(submit) {
-var apiURL = 'https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all'
+var apiURL = 'https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1”'
 // make a get request to url
 fetch(apiURL)
 .then(function(response){
@@ -35,21 +39,18 @@ fetch(apiURL)
 }) .then(function(data){
   console.log(data)
   //displayFacts(data);
-});
 
+  // var displayFacts = document.getElementById("facts about dogs")
+  // response.innerHTML = data
 
-  var displayFacts = document.getElementById("facts about dogs")
-  console.log(response)
+  // const newDiv = document.createElement("div")
 
-  response.innerHTML = data
+  // newDiv.setAttribute('src', data[0]);
 
-  const newDiv = document.createElement("div")
+  // response.appendChild(newDiv)
+});  
+}
 
-  newDiv.setAttribute('src', data[0]);
-
-  response.appendChild(newDiv)
-  
-  
   // function addElement () {
   //   const newDiv = document.createElement("div")
   //   const newContent = document.createTextNode("Hello")
@@ -57,12 +58,11 @@ fetch(apiURL)
   //   const currentDiv = document.getElementById("facts about dogs");
   //   document.body.insertBefore(newDiv, currentDiv);
   // }
-}) 
-}
+
 // }
 // // Cats API call
 // Dogs API call
-var getCatFacts = function (user) {
+function CatFacts (user) {
 var apiUrl = 'https://catfact.ninja/breeds'
   
   // make a get request to url
