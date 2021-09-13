@@ -6,7 +6,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Adopt a Pet from Us</title>
+  <title>Facts About Cats and Dogs</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -25,7 +25,7 @@
 <body>
   <header>
     
-    <h1>Adopt<span class="cats"> From</span> Us</h1>
+    <h1 class="page-title">Facts About Cats and Dogs</h1>
 
     <nav>
       <ul>
@@ -39,11 +39,11 @@
               title="Facts About Dogs">
               Facts About Dogs</a>
           </li>
-          <!-- <li> 
-              <a href="#adoption stories" 
-              title="Social Media Marketing">
-              Search Social Media Marketing</a>
-          </li> -->
+           <li> 
+              <a href="#adopt from us" 
+              title="Adopt From Us">
+              Adopt From Us</a>
+          </li>
       </ul>
   </nav>
         
@@ -83,11 +83,20 @@
           src="./assets/images/cat.jpg" class="float-left" 
           alt="Search engine Optimization, image of cats, pets">
           <h2>Facts About Cats</h2>
+          <h3></h3>
           <p>
-            <a class="button button-primary" href="#">Name button</button></a>
-            <img src="./assets/images/cat2.jpg" class="float-right"
+            <!--<a class="button button-primary" href="#">Name button</button></a>-->
+            <div class="six columns">
+              <label for="exampleRecipientInput">Select a Breed</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+                <option value="Option 1">Alaskan Malamute </option>
+                <option value="Option 2">Australian cattle dog</option>
+                <option value="Option 3">beagle</option>
+              </select>
+              <button id="dogButton" class="button-primary">Submit</button> 
+            <!--<img src="./assets/images/cat2.jpg" class="float-right"
             alt="Search engine Optimization, image of cats, pets">  
-          </img>
+          </img>-->
         </p>
         </img>
             
@@ -95,21 +104,64 @@
   </section>
   
      <!-- This section is linked from the nav bar  -->
-    <section id="facts" class="search">
+    <section id="facts about dogs" class="search">
       <img
           src="./assets/images/dog.jpg" class="float-left" 
           alt="Search engine Optimization, image of dogs, pets">
           <h2>Facts About Dogs</h2>
-          
+
+      <!--I pulled this div from the Git it Done module-->
+         <!-- <div class="col-12 col-md-8">
+            <h2 class="subtitle">: <span id="repo-search-term"></span></h2>
+            <div id="repos-container" class="list-group">
+      
+            </div>-->
           <p>
-            <button id="dogButton" class="button-primary">Submit</button> 
-            <img src="./assets/images/dog2.jpg" class="float-right"
-            alt="Search engine Optimization, image of dogs, pets">  
+            <div class="six columns">
+              <label for="exampleRecipientInput">Select a Breed</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+                <option value="Option 1">Alaskan Malamute </option>
+                <option value="Option 2">Australian cattle dog</option>
+                <option value="Option 3">beagle</option>
+              </select>
+              <button id="dogButton" class="button-primary">Submit</button>  
+            <!--<img src="./assets/images/dog2.jpg" class="float-right"
+            alt="Search engine Optimization, image of dogs, pets">-->  
            
-            
-          </p>
-              
+            </p>
+
+
   </section>
+
+  <section id="adopt from us" class="adoptsearch">
+        <h2>Adopt from us</h2>
+  
+        <div>
+            <div class="row">
+              <div class="six columns">
+                <label for="exampleEmailInput">Your email</label>
+                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+              </div>
+              <div class="six columns">
+                <label for="exampleRecipientInput">Reason for contacting</label>
+                <select class="u-full-width" id="exampleRecipientInput">
+                  <option value="Option 1">Interested in adopting a cat </option>
+                  <option value="Option 2">Interested in Adopting a dog</option>
+                  <option value="Option 3">Report website error</option>
+                </select>
+              </div>
+            </div>
+            <label for="exampleMessage">Message</label>
+            <textarea class="u-full-width" placeholder="Hi …" id="exampleMessage"></textarea>
+            <label class="example-send-yourself-copy">
+              <input type="checkbox">
+              <span class="label-body">Send a copy to yourself</span>
+            </label>
+            <button id="submit" class="button-primary">Submit</button>
+          </div>
+          
+        
+  </section>      
 
   <!-- <aside>
     <h3>Cat Adoption Story</h3>
@@ -130,7 +182,7 @@
    
 </aside> -->
 
-<div>
+<!--<div>
   <div class="row">
     <div class="six columns">
       <label for="exampleEmailInput">Your email</label>
@@ -139,9 +191,9 @@
     <div class="six columns">
       <label for="exampleRecipientInput">Reason for contacting</label>
       <select class="u-full-width" id="exampleRecipientInput">
-        <option value="Option 1">Adopt a Cat</option>
-        <option value="Option 2">Adopt a Dog</option>
-        <option value="Option 3">Donate funds</option>
+        <option value="Option 1">I have additional cat facts </option>
+        <option value="Option 2">I have additional dog facts</option>
+        <option value="Option 3">Report website erros</option>
       </select>
     </div>
   </div>
@@ -152,7 +204,7 @@
     <span class="label-body">Send a copy to yourself</span>
   </label>
   <button id="submit" class="button-primary">Submit</button>
-</div>
+</div>-->
 
   <footer class="footer">
     <h2>Project Team - Christian, Angelo, and Josh</h2>
