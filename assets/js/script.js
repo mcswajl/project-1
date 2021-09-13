@@ -2,7 +2,7 @@ const messageInput = document.getElementById("exampleMessage")
 const emailInput = document.getElementById("exampleEmailInput")
 const reasonInput = document.getElementById("exampleRecipientInput")
 const submit = document.getElementById("submit")
-const h3 = document.getElementById("display API response")
+const getCatFacts = document.getElementById("display API response")
 
 submit.addEventListener('click', function(event) {
   event.preventDefault();
@@ -26,7 +26,7 @@ const dogButton = document.getElementById("dogButton")
 
 
 // Dogs API call
-var getDogFacts = function (user) {
+getDogFacts = function(submit) {
 var apiURL = 'https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all'
 // make a get request to url
 fetch(apiURL)
@@ -35,9 +35,10 @@ fetch(apiURL)
 }) .then(function(data){
   console.log(data)
   //displayFacts(data);
+});
 
 
-  var response = document.getElementById("facts about dogs")
+  var displayFacts = document.getElementById("facts about dogs")
   console.log(response)
 
   response.innerHTML = data

@@ -128,15 +128,15 @@ label {
     align-self: center;
 }
 /* apply styles to the aside elements */
-/* aside { 
-    margin-right: 20px;
+/*aside { 
+    margin-right: 0px;
     padding: 20px;
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color:#2a607c;
     color: #ffffff;
 }
  aside h3 {
