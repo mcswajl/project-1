@@ -61,6 +61,12 @@ p {
     background-color: #d9dcd6;
 }
 
+.container {
+    width: 70%;
+    float: left;
+    margin-left: 5% !important;
+}
+
 .container h4 {
     margin-bottom: 0%;
     font-size: 20px;
@@ -104,6 +110,17 @@ section h2 h4 {
     font-size: 30px;
 }
 
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: left;
+    margin-right: 25px;
+}
+
+
 h5 {
     margin-bottom:  5%;
     font-size: 22px;
@@ -118,7 +135,7 @@ label {
     align-self: center;
 }
 /* apply styles to the aside elements */
-/*aside { 
+aside { 
     margin-right: 0px;
     padding: 20px;
     clear: both;
@@ -138,7 +155,7 @@ label {
     margin: 10px auto;
     margin-bottom: 32px;
     max-width: 150px;
- }*/
+ }
 
  /* apply styles to footer */
 footer {
@@ -151,3 +168,21 @@ footer {
 footer h2 {
     font-size: 20px;
 }
+@media (max-width: 550px) {
+    .float-left {
+        float: none;    
+    }   
+    .search {
+        overflow: scroll;
+    }
+    header {
+        overflow: scroll;
+    }
+    footer {
+        padding: 50px;
+
+    }
+aside {
+display: none;
+}
+} 
