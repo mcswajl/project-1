@@ -42,7 +42,10 @@ header nav ul li {
     margin-left: 25px;
 }
 
-
+.note {
+    margin-top: 30px;
+    float: right;
+}
 
 .formsearch {
     display: inline-flex;
@@ -153,7 +156,6 @@ label {
     margin-bottom: 20px;
     text-align: center;
  }
-
  aside img {
     display: block;
     margin: 10px auto;
