@@ -138,6 +138,7 @@ label {
 aside { 
     margin-right: 0px;
     margin-top: 10%;
+    margin-bottom: 5%;
     padding: 20px;
     clear: both;
     float: right;
@@ -148,7 +149,8 @@ aside {
     color: #ffffff;
 }
 
- aside h3 {
+
+ aside h2 {
     margin-bottom: 20px;
     text-align: center;
  }
