@@ -26,28 +26,29 @@ emailInput.value = ""
 
 
 
+const catButton = document.getElementById("catButton")
 const dogButton = document.getElementById("dogButton")
 
 
 // Dogs API call
 getDogFacts = function(submit) {
-var apiURL = 'https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1”'
+var apiURL = 'https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1'
 // make a get request to url
 fetch(apiURL)
 .then(function(response){
-  response.json()
+  return response.json()
 }) .then(function(data){
   console.log(data)
-  //displayFacts(data);
+ 
+  
 
-  // var displayFacts = document.getElementById("facts about dogs")
-  // response.innerHTML = data
+  var displayFacts = document.getElementById("title")
+  var displayFacts2 = document.getElementById("title2")
+  var displayFacts6 = document.getElementById("title6")
 
-  // const newDiv = document.createElement("div")
-
-  // newDiv.setAttribute('src', data[0]);
-
-  // response.appendChild(newDiv)
+  displayFacts.innerHTML = `<div>Breed: ${data[0].breeds[0].name}</div>` 
+  displayFacts2.innerHTML = `<div>Personality: ${data[0].breeds[0].temperament}</div>`
+  displayFacts6.innerHTML = `<div>Expected Life Span: ${data[0].breeds[0].life_span}</div>`
 });  
 }
 
@@ -62,28 +63,27 @@ fetch(apiURL)
 // }
 // // Cats API call
 // Dogs API call
-function CatFacts (user) {
+catFacts = function(submit) {
 var apiUrl = 'https://catfact.ninja/breeds'
   
   // make a get request to url
-  fetch(apiURL)
+  fetch(apiUrl)
   .then(function(response){
-    response.json()
+    return response.json()
   }) .then(function(data){
     console.log(data)
-    //displayFacts(data);
-  
-  
-    var response = document.getElementById("facts about cats")
-    console.log(response)
-  
-    response.innerHTML = data
-  
-    const newDiv = document.createElement("div")
-  
-    newDiv.setAttribute('src', data[0]);
-  
-    response.appendChild(newDiv)
+    
+  var displayFacts3 = document.getElementById("title3")
+  var displayFacts4 = document.getElementById("title4")
+  var displayFacts5 = document.getElementById("title5")
+  var randomNumber = Math.floor(Math.random() * 25)
+ 
+    displayFacts3.innerHTML = `<div>Breed: ${data.data[randomNumber].breed}</div>`
+    displayFacts4.innerHTML = `<div>Coat: ${data.data[randomNumber].coat}</div>`
+    displayFacts5.innerHTML = `<div>Country: ${data.data[randomNumber].country}</div>`
+
+  // data.data[0].origin
+    
     
     
   }) 
@@ -94,4 +94,5 @@ var apiUrl = 'https://catfact.ninja/breeds'
 //     var apiUrl = 'https://catfact.ninja/breeds' + user + '/repos';
   
 dogButton.addEventListener('click', getDogFacts)
+catButton.addEventListener('click', catFacts)
 

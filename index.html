@@ -20,7 +20,7 @@
   <!--<link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">-->
   
-  <!--<style>
+  <!-- <style>
     aside {
       width: 15%;
       padding-left: 15px;
@@ -46,8 +46,8 @@
        <p>
         Add text here for the success story
        </p>
-      </aside>-->
-      
+      </aside>
+       -->
 </head>
 <body>
   <header>
@@ -67,9 +67,9 @@
               Facts About Dogs</a>
           </li>
            <li> 
-              <a href="#adopt from us" 
-              title="Adopt From Us">
-              Adopt From Us</a>
+              <a href="#provide" 
+              title="provde">
+              Provide Your Facts</a>
           </li>
       </ul>
   </nav>
@@ -117,18 +117,14 @@
       <img
           src="./assets/images/cat.jpg" class="float-left" 
           alt="Search engine Optimization, image of cats, pets">
-          <h2>Facts About Cats</h2>
-          <h3></h3>
+          <h2>Facts About Cat Breeds</h2>
+          <h4 id="title3"></h4>
+          <h4 id="title4"></h4>
+          <h4 id="title5"></h4>
           <p>
             <!--<a class="button button-primary" href="#">Name button</button></a>-->
             <div class="six columns">
-              <label for="exampleRecipientInput">Select a Breed</label>
-              <select class="u-full-width" id="exampleRecipientInput">
-                <option value="Option 1">Alaskan Malamute </option>
-                <option value="Option 2">Australian cattle dog</option>
-                <option value="Option 3">beagle</option>
-              </select>
-              <button id="dogButton" class="button-primary">Submit</button> 
+              <button id="catButton" class="button-primary">Submit</button> 
             <!--<img src="./assets/images/cat2.jpg" class="float-right"
             alt="Search engine Optimization, image of cats, pets">  
           </img>-->
@@ -143,7 +139,10 @@
       <img
           src="./assets/images/dog.jpg" class="float-left" 
           alt="Search engine Optimization, image of dogs, pets">
-          <h2>Facts About Dogs</h2>
+          <h2>Facts About Dog Breeds</h2>
+          <h4 id="title"></h4>
+          <h4 id="title2"></h4>
+          <h4 id="title6"></h4>
 
       <!--I pulled this div from the Git it Done module-->
          <!-- <div class="col-12 col-md-8">
@@ -153,23 +152,15 @@
             </div>-->
           <p>
             <div class="six columns">
-              <label for="exampleRecipientInput">Select a Breed</label>
-              <select class="u-full-width" id="exampleRecipientInput">
-                <option value="Option 1">Alaskan Malamute </option>
-                <option value="Option 2">Australian cattle dog</option>
-                <option value="Option 3">beagle</option>
-              </select>
               <button id="dogButton" class="button-primary">Submit</button>  
-            <!--<img src="./assets/images/dog2.jpg" class="float-right"
-            alt="Search engine Optimization, image of dogs, pets">-->  
            
             </p>
 
 
   </section>
 
-  <section id="adopt from us" class="adoptsearch">
-        <h2>Adopt from us</h2>
+  <section id="provide" class="providefacts">
+        <h2>Provide your facts</h2>
   
         <div>
             <div class="row">
@@ -178,20 +169,16 @@
                 <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
               </div>
               <div class="six columns">
-                <label for="exampleRecipientInput">Reason for contacting</label>
+                <label for="exampleRecipientInput">Provide Additional Facts</label>
                 <select class="u-full-width" id="exampleRecipientInput">
-                  <option value="Option 1">Interested in adopting a cat </option>
-                  <option value="Option 2">Interested in Adopting a dog</option>
-                  <option value="Option 3">Report website error</option>
+                  <option value="Option 1">New fact about cats </option>
+                  <option value="Option 2">New fact about dogs</option>
+                  
                 </select>
               </div>
             </div>
             <label for="exampleMessage">Message</label>
             <textarea class="u-full-width" placeholder="Hi …" id="exampleMessage"></textarea>
-            <label class="example-send-yourself-copy">
-              <input type="checkbox">
-              <span class="label-body">Send a copy to yourself</span>
-            </label>
             <button id="submit" class="button-primary">Submit</button>
           </div>
           
