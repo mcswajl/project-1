@@ -47,13 +47,6 @@ header nav ul li {
     float: right;
 }
 
-.formsearch {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-end;
-    /* width: 100%;*/
-
-}
 /* apply styles to the a href= */
 a {
     color: #ffffff;
@@ -68,19 +61,9 @@ p {
     background-color: #d9dcd6;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
 .container h4 {
     margin-bottom: 0%;
     font-size: 20px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
 }
 
 .container h5 {
@@ -131,12 +114,6 @@ h5 {
     margin-left: 20px;
 }
 
-form {
-    width: 75%;
-    display:inline-block;
-    margin-left: 10%;
-    
-}
 label {
     align-self: center;
 }
