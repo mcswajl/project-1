@@ -3,6 +3,8 @@ const emailInput = document.getElementById("exampleEmailInput")
 const reasonInput = document.getElementById("exampleRecipientInput")
 const submit = document.getElementById("submit")
 const getCatFacts = document.getElementById("display API response")
+var modal = document.getElementById("myModal") 
+
 
 submit.addEventListener('click', function(event) {
   event.preventDefault();
@@ -13,6 +15,7 @@ submit.addEventListener('click', function(event) {
 
 console.log(msg)
 console.log(email)
+console.log(reason)
 
 localStorage.setItem("msg", msg);
 localStorage.setItem("email", email);
@@ -21,10 +24,13 @@ localStorage.setItem("reason", reason);
 //clear content
 messageInput.value = "" 
 emailInput.value = ""
+modal.style.display = "flex";
 })
+
 
 const catButton = document.getElementById("catButton")
 const dogButton = document.getElementById("dogButton")
+
 
 // // Cats API call
 catFacts = function(submit) {
@@ -67,6 +73,25 @@ getDogFacts = function(submit) {
     displayFacts6.innerHTML = `<div>Expected Life Span:   ${data[0].breeds[0].life_span}</div>`
   });  
   }
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 dogButton.addEventListener('click', getDogFacts)
 catButton.addEventListener('click', catFacts)
+
 
