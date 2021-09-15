@@ -11,7 +11,7 @@ submit.addEventListener('click', function(event) {
   
   const msg = messageInput.value;
   const email = emailInput.value;
-  const reason = reasonInput.value;
+  const reason = reasonInput.options[reasonInput.selectedIndex].text;
 
 console.log(msg)
 console.log(email)
@@ -20,6 +20,14 @@ console.log(reason)
 localStorage.setItem("msg", msg);
 localStorage.setItem("email", email);
 localStorage.setItem("reason", reason);
+
+var lsMsg = localStorage.getItem("msg")
+var lsEmail = localStorage.getItem("email")
+var lsReason = localStorage.getItem("reason")
+
+document.getElementById("msg").innerText = lsMsg
+document.getElementById("email").innerText = lsEmail
+document.getElementById("reason").innerText = lsReason
 
 //clear content
 messageInput.value = "" 
