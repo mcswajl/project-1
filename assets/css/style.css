@@ -172,6 +172,25 @@ footer {
 footer h2 {
     font-size: 20px;
 }
+/*First media query is for smaller laptop screens*/
+@media (max-width: 1350px) {
+    .float-left {
+        float: none;    
+    }   
+    .search {
+        overflow: scroll;
+    }
+    header {
+        overflow: scroll;
+    }
+    footer {
+        padding: 50px;
+    }
+
+    aside {
+    display: none;
+    }
+/*Second media query is for small phone screens*/    
 @media (max-width: 550px) {
     .float-left {
         float: none;    
@@ -184,10 +203,9 @@ footer h2 {
     }
     footer {
         padding: 50px;
-
     }
     
     aside {
     display: none;
     }
-} 
+}
