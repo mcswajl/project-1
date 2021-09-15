@@ -18,48 +18,50 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-  
+  <!-- Side bar with additional facts -->
   <aside> 
     <h2>3 Most Popular Cat Breeds</h2>
        <ul>
            <li>Ragdoll</li>
-           <img
-        img src="./assets/images/Ragdoll-cat.jpg" 
-        alt="Image of a dog"/>
+              <img
+                img src="./assets/images/Ragdoll-cat.jpg" 
+                alt="Image of a cat"/>
            <li>Exotic</li>
-           <img
-        img src="./assets/images/Exotic-cat.jpg" 
-        alt="Image of a dog"/>
+              <img
+                img src="./assets/images/Exotic-cat.jpg" 
+                alt="Image of a cat"/>
            <li>Maine Coon Cat</li>
-           <img
-        img src="./assets/images/Main-Coon-Cat.jpg" 
-        alt="Image of a dog"/>
+              <img
+                img src="./assets/images/Main-Coon-Cat.jpg" 
+                alt="Image of a cat"/>
       </ul>
-   <br>
-       <h2>3 Most Popular Dog Breeds</h2>
+      
+    <h2>3 Most Popular Dog Breeds</h2>
        
-       <ul>
-        <li>Labrador Retriever</li>
-        <img
-        img src="./assets/images/labrador-retriever.jpg" 
-        alt="Image of a dog"/>
-        <li>German Shepherd</li>
-        <img
-        img src="./assets/images/german-shepherd.jpg" 
-        alt="Image of a dog"/>
-        <li>Golden Retriever</li>
-        <img
-        img src="./assets/images/golden-retriever.jpg" 
-        alt="Image of a dog"/>
-   </ul>
-      </aside>
+        <ul>
+            <li>Labrador Retriever</li>
+              <img
+                img src="./assets/images/labrador-retriever.jpg" 
+                alt="Image of a dog"/>
+            <li>German Shepherd</li>
+              <img
+                img src="./assets/images/german-shepherd.jpg" 
+                alt="Image of a dog"/>
+          <li>Golden Retriever</li>
+              <img
+                img src="./assets/images/golden-retriever.jpg" 
+                alt="Image of a dog"/>
+      </ul>
+  </aside>
    
-   </head>
+</head>
+
 <body>
   <header>
-    
+    <!-- Page title for header -->
     <h1 class="page-title">Facts About Cats and Dogs</h1>
 
+    <!-- Nav bar items that link to the three sections  -->
     <nav>
       <ul>
           <li>
@@ -80,16 +82,10 @@
       </ul>
   </nav>
         
-    </header>
+</header>
 
-    <section class="cats" 
-         alt="Image of co-workers meeting">
-</section>
-  
-
-  <!-- Area of the page above the sections 
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+<!-- Area of the page above the sections -->
+    <div class="container">
     <div class="row">
       <div class="twelve columns" style="text-align: center;">
         <h4>Why Learn Facts About Cats and Dogs</h4>
@@ -99,16 +95,15 @@
           There are large and small breeds of dogs, as well as hypoallergenic dogs and cats. 
           It's important to research breeds and temperaments as part of the adoption process. 
           We can guarantee there is a furry friend that's just right for you!</p>
-          <p> Click below to learn more about cats and dogs. 
+        <p> Click below to learn more about cats and dogs. 
         </p>
-        </div>
+      </div>
     </div>
      
   
     <!-- This section is linked from the nav bar  -->
     <section id="facts about cats" class="search">
-      <div>
-      <img
+        <img
           src="./assets/images/cat.jpg" class="float-left" 
           alt="Search engine Optimization, image of cats, pets">
           <h2>Facts About Cat Breeds</h2>
@@ -116,20 +111,17 @@
           <h4 id="title4"></h4>
           <h4 id="title5"></h4>
           
-            <!--<a class="button button-primary" href="#">Name button</button></a>-->
-            <div class="six columns">
-              <button id="catButton" class="button-primary">Display Facts</button> 
-              <div class="Note:">Each time you click "Display Facts" a new fact will appear.</div>
-            </div>
+    <!-- Class is styled with Skeleton-->
+      <div class="six columns">
+      <button id="catButton" class="button-primary">Display Facts</button> 
+      <div class="Note:">Each time you click "Display Facts" a new fact will appear.</div>
+       </div>
 
-        </section>
-               
-              
   </section>
   
-     <!-- This section is linked from the nav bar  -->
-    <section id="facts about dogs" class="search">
-      <img
+    <!-- This section is linked from the nav bar  -->
+  <section id="facts about dogs" class="search">
+        <img
           src="./assets/images/dog.jpg" class="float-left" 
           alt="Search engine Optimization, image of dogs, pets">
           <h2>Facts About Dog Breeds</h2>
@@ -137,35 +129,33 @@
           <h4 id="title2"></h4>
           <h4 id="title6"></h4>
 
-      
-            <div class="six columns">
-              <button id="dogButton" class="button-primary">Display Facts</button>  
-              <div class="Note:">Each time you click "Display Facts" a new fact will appear.</div>
-            </div>
-        </section>
-
+     <!-- Class is styled with Skeleton-->
+      <div class="six columns">
+      <button id="dogButton" class="button-primary">Display Facts</button>  
+      <div class="Note:">Each time you click "Display Facts" a new fact will appear.</div>
+      </div>
+  </section>
+    <!-- This section is linked from the nav bar and uses Skeleton form  -->
   <section id="provide" class="providefacts">
         <h2>Provide your facts</h2>
-  
         <div>
-            <div class="row">
+           <div class="row">
               <div class="six columns">
-                <label for="exampleEmailInput">Your email</label>
-                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-              </div>
-              <div class="six columns">
+               <label for="exampleEmailInput">Your email</label>
+               <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+             </div>
+            <div class="six columns">
                 <label for="exampleRecipientInput">Provide Additional Facts</label>
                 <select class="u-full-width" id="exampleRecipientInput">
                   <option value="Option 1">New fact about cats </option>
                   <option value="Option 2">New fact about dogs</option>
-                  
                 </select>
-              </div>
             </div>
+          </div>
             <label for="exampleMessage">Type Your Pet Facts Here</label>
             <textarea class="u-full-width" placeholder="Hi …" id="exampleMessage"></textarea>
             <button id="submit" class="button-primary">Submit</button>
-          </div>
+        <!-- </div> -->
           
         
   </section>      

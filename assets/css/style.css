@@ -173,9 +173,10 @@ footer h2 {
     font-size: 20px;
 }
 /*First media query is for smaller laptop screens*/
-@media (max-width: 1350px) {
+@media (max-width: 1550px) {
     .float-left {
-        float: none;    
+        float: none; 
+        max-height: 100px;   
     }   
     .search {
         overflow: scroll;
@@ -185,15 +186,24 @@ footer h2 {
     }
     footer {
         padding: 50px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px !important;
     }
 
     aside {
     display: none;
     }
+}
+
 /*Second media query is for small phone screens*/    
 @media (max-width: 550px) {
     .float-left {
-        float: none;    
+        float: none;
+        max-height: 100px;    
     }   
     .search {
         overflow: scroll;
@@ -204,7 +214,10 @@ footer h2 {
     footer {
         padding: 50px;
     }
-    
+    h2 {
+        font-size: 20px !important;
+    }
+
     aside {
     display: none;
     }
