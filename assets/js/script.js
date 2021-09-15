@@ -24,7 +24,7 @@ localStorage.setItem("reason", reason);
 //clear content
 messageInput.value = "" 
 emailInput.value = ""
-modal.style.display = "flex";
+modal.style.display = "";
 })
 
 
