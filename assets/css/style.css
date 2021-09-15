@@ -175,6 +175,7 @@ aside {
  /* Modal Content */
  .modal-content {
    background-color: #2a6888;
+   color: white;
    margin: auto;
    padding: 20px;
    border: 1px solid #2a6888;
@@ -207,7 +208,7 @@ footer h2 {
     font-size: 20px;
 }
 /*First media query is for smaller laptop screens*/
-@media (max-width: 1550px) {
+@media (max-width: 1350px) {
     .float-left {
         float: none; 
         max-height: 100px;   

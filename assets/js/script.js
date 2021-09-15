@@ -25,9 +25,9 @@ var lsMsg = localStorage.getItem("msg")
 var lsEmail = localStorage.getItem("email")
 var lsReason = localStorage.getItem("reason")
 
-document.getElementById("msg").innerText = lsMsg
-document.getElementById("email").innerText = lsEmail
-document.getElementById("reason").innerText = lsReason
+document.getElementById("msg").innerText = "Your submitted pet facts:  " + lsMsg
+document.getElementById("email").innerText = lsEmail = "Email:  " + lsEmail
+document.getElementById("reason").innerText = lsReason = "Your additional facts:   " + lsReason
 
 //clear content
 messageInput.value = "" 
